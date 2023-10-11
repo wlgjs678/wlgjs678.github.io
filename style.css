@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(20, 20, 20);
+    max-width: 60rem;
+    margin:auto;
+}
+
+.outer {
+    background-color: rgb(60, 60, 60);
+}
+
+.main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
