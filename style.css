@@ -1,25 +1,47 @@
+html {
+    font-size: 16px;
+}
+
 body {
     max-width: 60rem;
     margin:auto;
-    font-family: 'IBM Plex Mono', serif;
+    font-family: 'Noto Sans Sinhala', serif;
     background: linear-gradient(#c8e6ff, #9dddff, #4fcdff, #2289ff);
 }
 
 header {
-    margin-bottom: 1rem;
     background: url('./header-image.jpg') center/cover no-repeat;
 }
 
 #page-header1 {
-    font-size:3rem;
+    font-size:4rem;
     color:white;
     margin-left: 2rem;
 }
 
 #page-header2 {
-    font-size:3rem;
+    font-size:4rem;
     color:white;
     margin-left: 2rem;
+}
+
+.links {
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    margin: 0 auto;
+    border-top: 0.2rem solid rgb(100, 100, 100);
+    border-bottom: 0.2rem solid rgb(100, 100, 100);
+    font-size: 1.1rem;
+}
+
+.links h2 {
+    font-size: 5rem;
+}
+
+.links a {
+    color: white;
 }
 
 .outer {
@@ -30,5 +52,9 @@ header {
     margin-left: 1rem;
     margin-right: 1rem;
     background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+#sociable-ai {
     color: white;
 }
