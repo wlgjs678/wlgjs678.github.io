@@ -1,5 +1,6 @@
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -7,6 +8,16 @@ body {
     margin:auto;
     font-family: 'Noto Sans Sinhala', serif;
     background: linear-gradient(#c8e6ff, #9dddff, #4fcdff, #2289ff);
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 header {
@@ -26,14 +37,20 @@ header {
 }
 
 .links {
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(100, 140, 150);
     display: flex;
     justify-content: space-between;
-    padding: 0 4rem;
+    padding: 0.2rem 4rem;
     margin: 0 auto;
-    border-top: 0.2rem solid rgb(100, 100, 100);
-    border-bottom: 0.2rem solid rgb(100, 100, 100);
+    border-top: 0.2rem double white;
+    border-bottom: 0.2rem double white;
     font-size: 1.1rem;
+}
+
+.links {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .links h2 {
@@ -42,6 +59,7 @@ header {
 
 .links a {
     color: white;
+    text-decoration: none;
 }
 
 .outer {

@@ -4,11 +4,13 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>My Portfolio</title>
+	<title>Jiheon Kim</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans Sinhala">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -28,8 +30,8 @@
         <div class="links">
             <a href="#about-me">About Me</a>
             <a href="#projects">Projects</a>
-            <a href="https://github.com/wlgjs678" target="_blank">My Github</a>
-            <a href="https://www.linkedin.com/in/jiheonkim00" target="_blank">My LinkedIn</a>
+            <a href="https://github.com/wlgjs678" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/jiheonkim00" target="_blank">LinkedIn</a>
             <a href="#contact-me">Contact Me</a>
         </div>
 
@@ -74,9 +76,60 @@
 
             <section id="contact-me">
                 <h2>Contact Me</h2>
-                Email: jiheonkim00@gmail.com
+                Phone: 
+                <span id="phone" class="clickable-phone">+1 301-801-1017</span>
+                <div id="copyMessagePhone" style="display: none; color: rgb(165, 220, 163);">Copied phone number!</div>
                 <br>
-                Phone #: +1 301-801-1017
+                Email: 
+                <span id="email" class="clickable-email">jiheonkim00@gmail.com</span>
+                <div id="copyMessageEmail" style="display: none; color: rgb(165, 220, 163);">Copied email!</div>
+                <br><br>
+                * Click on the phone number or email to copy *
+                <script>
+                    // Function to handle copying text to clipboard
+                    function copyToClipboard(text) {
+                        var textarea = document.createElement('textarea');
+                        textarea.value = text;
+                        document.body.appendChild(textarea);
+                        textarea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textarea);
+                    }
+
+                    // Get the email and phone number elements by their ids
+                    var phoneElement = document.getElementById('phone');
+                    var emailElement = document.getElementById('email');
+
+                    // Add click event listeners to the email and phone number elements
+                    phoneElement.addEventListener('click', function() {
+                        copyToClipboard(phoneElement.textContent);
+                        displayCopiedMessagePhone();
+                    });
+                    
+                    emailElement.addEventListener('click', function() {
+                        copyToClipboard(emailElement.textContent);
+                        displayCopiedMessageEmail();
+                    });
+
+                    // Function to display the "Copied" message and hide it after 2 seconds
+                    function displayCopiedMessagePhone() {
+                        var copyMessage = document.getElementById('copyMessagePhone');
+                        copyMessage.style.display = 'block';
+
+                        setTimeout(function() {
+                            copyMessage.style.display = 'none';
+                        }, 2000);
+                    }
+
+                    function displayCopiedMessageEmail() {
+                        var copyMessage = document.getElementById('copyMessageEmail');
+                        copyMessage.style.display = 'block';
+
+                        setTimeout(function() {
+                            copyMessage.style.display = 'none';
+                        }, 2000);
+                    }
+                </script>
                 <br><br>
             </section>
             <hr>
