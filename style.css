@@ -22,18 +22,19 @@ body {
 
 header {
     background: url('./header-image.jpg') center/cover no-repeat;
+    padding: 1rem 1rem;
 }
 
 #page-header1 {
     font-size:4rem;
     color:white;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 #page-header2 {
     font-size:4rem;
     color:white;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .links {
@@ -53,13 +54,23 @@ header {
     z-index: 100;
 }
 
-.links h2 {
-    font-size: 5rem;
-}
-
 .links a {
     color: white;
     text-decoration: none;
+}
+
+.nav-link {
+    padding: 0.2rem 0.2rem;
+}
+
+.active {
+    background-color: rgba(21, 38, 60, 0.5);
+    border-radius: 0.5rem;
+}
+
+#links-icon {
+    width: 1rem;
+    height: 1rem;
 }
 
 .outer {
@@ -71,8 +82,52 @@ header {
     margin-right: 1rem;
     background-color: rgb(60, 60, 60);
     color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+    line-height: 1.5;
+}
+
+.main h2 {
+    font-size: 1.7rem;
+}
+
+.main h3 {
+    font-size: 1.1rem;
 }
 
 #sociable-ai {
     color: white;
+}
+
+.socially {
+    border-top: 0.1rem dashed white;
+    border-bottom: 0.1rem dashed white;
+    padding-bottom: 1rem;
+}
+
+.parse-lex {
+    border-bottom: 0.1rem dashed white;
+    padding-bottom: 1rem;
+}
+
+.terp-app {
+    border-bottom: 0.1rem dashed white;
+    padding-bottom: 1rem;
+}
+
+.fastest-route {
+    border-bottom: 0.1rem dashed white;
+    padding-bottom: 1rem;
+}
+
+.portfolio-website {
+    border-bottom: 0.1rem dashed white;
+    padding-bottom: 1rem;
+}
+
+footer {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-bottom: 1rem;
 }

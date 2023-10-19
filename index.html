@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans Sinhala">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <script>
+        window.addEventListener('beforeunload', function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
 </head>
 
 <body>
@@ -28,19 +33,60 @@
         </header>
 
         <div class="links">
-            <a href="#about-me">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="https://github.com/wlgjs678" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/jiheonkim00" target="_blank">LinkedIn</a>
-            <a href="#contact-me">Contact Me</a>
+            <a href="#about" class="nav-link" onclick="changeSection('about')">About</a>
+            <a href="#portfolio" class="nav-link" onclick="changeSection('portfolio')">Portfolio</a>
+            <a href="#contact" class="nav-link" onclick="changeSection('contact')">Contact</a>
+            <a href="https://github.com/wlgjs678" class="nav-link" target="_blank">
+                <img id="links-icon" src="github.png" alt="GitHub"> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/jiheonkim00" class="nav-link" target="_blank">
+                <img id="links-icon" src="linkedin.png" alt="LinkedIn"> LinkedIn
+            </a>
         </div>
+
+        <script>
+            // Function to change the active section
+            function changeSection(sectionId) {
+              // Remove the 'active' class from all links
+              document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+              });
+          
+              // Add the 'active' class to the clicked link
+              document.querySelector(`.nav-link[href="#${sectionId}"]`).classList.add('active');
+            }
+
+            // Function to handle scroll events
+            function handleScroll() {
+                // Get the current scroll position
+                var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+                // Check each section to determine which one is in view
+                document.querySelectorAll('section').forEach(section => {
+                var sectionTop = section.offsetTop;
+                var sectionHeight = section.offsetHeight;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    // The section is in view, update the active link
+                    changeSection(section.id);
+                }
+                });
+            }
+
+            // Add an event listener for scroll events
+            window.addEventListener('scroll', handleScroll);
+        </script>
 
         <div class="main">
             <hr>
-            <section id="about-me">
-                <h2>About Me</h2>
+            <section id="about">
+                <h2>About</h2>
+                - A little about me:
+                <br>
                 I'm currently enrolled at UMD (College Park) as an undergraduate and am planning to graduate in Dec. 
-                2023 with a Bachelor's Degree in Computer Science.
+                2023 with a Bachelor's Degree in Computer Science. I'm also working for 
+                <a href="https://www.sociable.how/" id="sociable-ai" target="_blank">Sociable AI</a> as a backend developer 
+                to expand my skills and gain hands-on experience. I began this job in Feb. 2023.
                 <br><br>
                 - How I chose Computer Science:
                 <br>
@@ -48,15 +94,12 @@
                 at Montgomery College for 2 years. I found it facinating that I can contribute to various types of industries 
                 and societies with the knowledge and skills from Computer Science. Then, I set my academic goals 
                 related to Computer Science. I graduated from Montgomery College with an Associate's Degree in 
-                Compupter Science and transferred to the University of Maryland to study more in depth.
+                Compupter Science and transferred to the University of Maryland to study further in depth.
                 <br><br>
                 - What I'm planning to do:
                 <br>
                 I'm now aiming to receive a Bachelor's Degree in Computer Science by Dec. 2023 and am pursuing my 
-                career to become a software engineer. Currently, I'm working for 
-                <a href="https://www.sociable.how/" id="sociable-ai" target="_blank">Sociable AI</a> as a backend developer 
-                to expand my skills and adapt to a working environment, while I'm attending classes. I began this 
-                job in Feb. 2023.
+                career to become a software engineer.
                 <br><br>
                 - What I like:
                 <br>
@@ -67,15 +110,42 @@
 
             <hr>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                Projects
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <div class="socially">
+                    <h3>Mobile App Developement: Socially</h3>
+                    This is a mobile app that works with the Android OS. It is intended to enable social practice 
+                    for children that have autism throughout the app. To ensure keeping it practical and accurate, 
+                    this is collaborated with a behavior technitian that have direct experience with autistic kids.
+                </div>
+                <div class="terp-app">
+                    <h3>Mobile App Development: Terp Connect</h3>
+                    This was a group project and it was the final project for the course CMSC436 at the University of 
+                    Maryland.
+                </div>
+                <div class="parse-lex">
+                    <h3>Parser and Lexer</h3>
+                    This was an individual project for CMSC330 at the University of Maryland. The skills such as 
+                    OCaml, parsing, and lexing were used to create this program.
+                </div>
+                <div class="fastest-route">
+                    <h3>Fastest Route Finder</h3>
+                    This was one of the most interesting projects from Montgomery College. I had to write a program that 
+                    find the fastest route possible on a pre-defined map.
+                </div>
+                <div class="portfolio-website">
+                    <h3>Portfolio Website</h3>
+                    This portfolio website itself is built with my skills in HTML, JavaScript, and CSS. The live server is 
+                    hosted through GitHub using github.io. While working on this website, I've used JavaScript to handle 
+                    the navigation bar at the top of the page, contact inquries, etc.
+                </div>
+                <br>
             </section>
 
             <hr>
 
-            <section id="contact-me">
-                <h2>Contact Me</h2>
+            <section id="contact">
+                <h2>Contact</h2>
                 Phone: 
                 <span id="phone" class="clickable-phone">+1 301-801-1017</span>
                 <div id="copyMessagePhone" style="display: none; color: rgb(165, 220, 163);">Copied phone number!</div>
@@ -133,31 +203,13 @@
                 <br><br>
             </section>
             <hr>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
         </div>
+
+        <footer>
+            <span id="page-footer">
+                &copy 2023 Jiheon Kim
+            </span>
+        </footer>
     </div>
 </body>
-
 </html>
