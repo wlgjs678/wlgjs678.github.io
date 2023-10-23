@@ -23,7 +23,7 @@ function handleScroll() {
 
     // Check each section to determine which one is in view
     document.querySelectorAll('section').forEach(section => {
-        var sectionTop = section.offsetTop;
+        var sectionTop = section.offsetTop-10;
         var sectionHeight = section.offsetHeight;
 
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {

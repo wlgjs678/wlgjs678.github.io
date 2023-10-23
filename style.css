@@ -8,7 +8,7 @@ body {
     margin:auto;
     font-family: 'Noto Sans Sinhala', serif;
     background: linear-gradient(#c8e6ff, #9dddff, #4fcdff, #2289ff);
-    animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 4s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -23,6 +23,7 @@ body {
 header {
     background: url('./header-image.jpg') center/cover no-repeat;
     padding: 1rem 1rem;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #page-header1 {
@@ -51,7 +52,7 @@ header {
 .links {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 0;
 }
 
 .links a {
@@ -98,8 +99,29 @@ header {
     font-size: 1.1rem;
 }
 
+#about {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#portfolio {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#contact {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 12%;
+    padding-right: 12%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 #sociable-ai {
     color: white;
+    text-decoration: none;
 }
 
 .socially {
@@ -126,18 +148,6 @@ header {
 .portfolio-website {
     border-bottom: 0.1rem dashed white;
     padding-bottom: 1rem;
-}
-
-footer {
-    color: white;
-    font-size: 0.8rem;
-    text-align: center;
-    padding-bottom: 1rem;
-}
-
-#contact {
-    padding-left: 12%;
-    padding-right: 12%;
 }
 
 .hover-contact {
@@ -171,7 +181,7 @@ footer {
 }
 
 .direct-message {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
 }
 
@@ -194,8 +204,16 @@ footer {
 }
 
 #submit {
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     padding: 0.3rem 0.6rem;
     font-size: 1.1rem;
-    background-color:rgb(125, 198, 154);
+    background-color: rgb(100, 140, 150);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-bottom: 1rem;
 }
