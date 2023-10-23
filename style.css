@@ -27,13 +27,13 @@ header {
 
 #page-header1 {
     font-size:4rem;
-    color:white;
+    color: rgba(20, 49, 69, 0.6);
     margin-left: 3rem;
 }
 
 #page-header2 {
     font-size:4rem;
-    color:white;
+    color: rgba(3, 67, 83, 0.6);
     margin-left: 3rem;
 }
 
@@ -66,11 +66,13 @@ header {
 .active {
     background-color: rgba(21, 38, 60, 0.5);
     border-radius: 0.5rem;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 #links-icon {
     width: 1rem;
-    height: 1rem;
+    height: 0.9rem;
 }
 
 .outer {
@@ -88,7 +90,8 @@ header {
 }
 
 .main h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .main h3 {
@@ -130,4 +133,69 @@ footer {
     font-size: 0.8rem;
     text-align: center;
     padding-bottom: 1rem;
+}
+
+#contact {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.hover-contact {
+    text-decoration: none;
+    border: 2px solid transparent;
+    position: relative;
+    color: #3498db;
+    transition: border 0.3s;
+    margin-right: 20px;
+    display: block;
+}
+
+.clickable:hover {
+    border: 2px solid #3498db;
+}
+
+.hover-text {
+    display: none;
+    position: absolute;
+    top: -110%;
+    left: 8%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.hover-contact:hover .hover-text {
+    display: block;
+}
+
+.direct-message {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#name {
+    width: 30%;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.6rem;
+}
+
+#email {
+    width: 30%;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.6rem;
+}
+
+#message {
+    width: 98%;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.6rem;
+}
+
+#submit {
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 1.1rem;
+    background-color:rgb(125, 198, 154);
 }
