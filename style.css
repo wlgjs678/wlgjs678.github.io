@@ -105,6 +105,10 @@ header {
     color: rgba(255, 255, 255, 0.9);
 }
 
+#sub-about {
+    padding-right: 3%;
+}
+
 #portfolio {
     padding-top: 5%;
     padding-bottom: 5%;
