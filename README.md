@@ -1,4 +1,4 @@
-This repository includes all the files created to make up the portfolio page.
+This repository includes all the files created to make up the portfolio webpage.
 
 Visit the webpage to view:
 https://wlgjs678.github.io/
