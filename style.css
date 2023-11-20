@@ -7,8 +7,9 @@ body {
     max-width: 60rem;
     margin:auto;
     font-family: 'Noto Sans Sinhala', serif;
-    background: linear-gradient(#c8e6ff, #9dddff, #4fcdff, #2289ff);
+    background: linear-gradient(#8bcbff, #8ad6ff, #6bd5ff, #51a2ff);
     animation: fadeIn 4s ease-in-out;
+    box-shadow: 0 0 1.5rem rgb(233, 233, 233);
 }
 
 @keyframes fadeIn {
@@ -24,17 +25,18 @@ header {
     background: url('./header-image.jpg') center/cover no-repeat;
     padding: 1rem 1rem;
     animation: fadeIn 1s ease-in-out;
+    text-shadow: 0 0 0.2rem white;
 }
 
 #page-header1 {
     font-size:4rem;
-    color: rgba(20, 49, 69, 0.6);
+    color: rgb(60, 60, 60);
     margin-left: 3rem;
 }
 
 #page-header2 {
     font-size:4rem;
-    color: rgba(3, 67, 83, 0.6);
+    color: rgb(60, 60, 60);
     margin-left: 3rem;
 }
 
@@ -88,6 +90,7 @@ header {
     padding-top: 0.5rem;
     padding-bottom: 0.4rem;
     line-height: 1.5;
+    text-shadow: 0 0 0.1rem rgb(200, 200, 200);
 }
 
 .main h2 {
@@ -124,7 +127,7 @@ header {
 }
 
 #sociable-ai {
-    color: white;
+    color: rgb(140, 180, 255);
     text-decoration: none;
 }
 
@@ -139,14 +142,59 @@ header {
     padding-bottom: 1rem;
 }
 
-.terp-app {
+.pl {
+    display: flex;
+    justify-content: center;
+}
+
+.pl img {
+    width: 12rem;
+    height: 24rem;
+}
+
+.terp-pro {
     border-bottom: 0.1rem dashed white;
     padding-bottom: 1rem;
+}
+
+.tp {
+    display: flex;
+    justify-content: center;
+}
+
+.tp img {
+    width: 10rem;
+    height: 20rem;
+}
+
+#demo-tp {
+    color: rgb(140, 180, 255);
+    text-decoration: none;
 }
 
 .fastest-route {
     border-bottom: 0.1rem dashed white;
     padding-bottom: 1rem;
+}
+
+.data-visualization {
+    border-bottom: 0.1rem dashed white;
+    padding-bottom: 1rem;
+}
+
+.dv {
+    display: flex;
+    justify-content: center;
+}
+
+.dv img {
+    width: 54rem;
+    height: 12rem;
+}
+
+#github-dv {
+    color: rgb(140, 180, 255);
+    text-decoration: none;
 }
 
 .portfolio-website {
@@ -172,7 +220,7 @@ header {
     display: none;
     position: absolute;
     top: -110%;
-    left: 8%;
+    left: 12%;
     background-color: #3498db;
     color: #fff;
     padding: 2px 4px;
@@ -193,22 +241,27 @@ header {
     width: 30%;
     border-radius: 0.5rem;
     padding: 0.3rem 0.6rem;
+    box-shadow: 0 0 0.3rem rgb(100, 140, 150);
 }
 
 #email {
     width: 30%;
     border-radius: 0.5rem;
     padding: 0.3rem 0.6rem;
+    box-shadow: 0 0 0.3rem rgb(100, 140, 150);
 }
 
 #message {
     width: 98%;
     border-radius: 0.5rem;
     padding: 0.3rem 0.6rem;
+    box-shadow: 0 0 0.3rem rgb(100, 140, 150);
 }
 
 #submit {
+    border: none;
     border-radius: 0.3rem;
+    box-shadow: 0 0 0.3rem rgb(100, 140, 150);
     padding: 0.3rem 0.6rem;
     font-size: 1.1rem;
     background-color: rgb(100, 140, 150);
