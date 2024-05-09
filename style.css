@@ -148,6 +148,11 @@ header {
     padding-bottom: 1rem;
 }
 
+.st-description {
+    text-align: center;
+    font-size: 11px;
+}
+
 .pl {
     display: flex;
     justify-content: center;
