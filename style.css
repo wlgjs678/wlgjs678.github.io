@@ -7,9 +7,9 @@ body {
     max-width: 60rem;
     margin:auto;
     font-family: 'Noto Sans Sinhala', serif;
-    background: linear-gradient(#9dd4ff, #3266a2);
+    background: linear-gradient(#15222c, #000408);
     animation: fadeIn 3s ease-in-out;
-    box-shadow: 0 0 1.5rem rgb(176, 176, 176);
+    box-shadow: 0 0 2rem rgb(149, 197, 255);
     position: relative;
 }
 
@@ -26,23 +26,23 @@ header {
     background: url('./header-image.jpg') center/cover no-repeat;
     padding: 1rem 1rem;
     animation: fadeIn 1s ease-in-out;
-    text-shadow: 0 0 0.2rem white;
+    text-shadow: 0 0 0.2rem rgb(128, 128, 128);
 }
 
 #page-header1 {
     font-size:4rem;
-    color: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
     margin-left: 3rem;
 }
 
 #page-header2 {
     font-size:4rem;
-    color: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
     margin-left: 3rem;
 }
 
 .links {
-    background-color: rgb(100, 140, 150);
+    background-color: rgb(42, 61, 98);
     display: flex;
     justify-content: space-between;
     padding: 0.2rem 4rem;
@@ -50,12 +50,11 @@ header {
     border-top: 0.2rem double white;
     border-bottom: 0.2rem double white;
     font-size: 1.1rem;
-}
-
-.links {
     position: sticky;
     top: 0;
-    z-index: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .links a {
@@ -68,7 +67,7 @@ header {
 }
 
 .active {
-    background-color: rgba(21, 38, 60, 0.5);
+    background-color: rgba(198, 210, 226, 0.5);
     border-radius: 0.5rem;
     padding-left: 1%;
     padding-right: 1%;

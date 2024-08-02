@@ -1,6 +1,9 @@
 window.onload = main;
 
 function main() {
+    // Highlight the 'About' section on initial load
+    changeSection('about');
+
     // Add an event listener for scroll events
     window.addEventListener('scroll', handleScroll);
 }
