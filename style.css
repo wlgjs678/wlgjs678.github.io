@@ -3,13 +3,45 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Base navigation styling */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .links a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  video,
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 body {
     max-width: 60rem;
     margin:auto;
     font-family: 'Noto Sans Sinhala', serif;
     background: linear-gradient(#15222c, #000408);
     animation: fadeIn 3s ease-in-out;
-    box-shadow: 0 0 2rem rgb(149, 197, 255);
+    box-shadow: 0 0 2rem rgb(43, 60, 80);
     position: relative;
 }
 
@@ -41,8 +73,12 @@ header {
     margin-left: 3rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .links {
-    background-color: rgb(164, 189, 238);
+    background-color: rgb(210, 220, 230);
     display: flex;
     justify-content: space-between;
     padding: 0.2rem 4rem;
@@ -101,6 +137,12 @@ header {
 .main h3 {
     font-size: 1.1rem;
 }
+.main h4 {
+    font-size: 1.6rem;
+    text-align: center;
+    border-top: 0.1rem ridge white;
+    border-bottom: 0.1rem ridge white;
+}
 
 #about {
     padding-top: 5%;
@@ -132,7 +174,6 @@ header {
 }
 
 .socially {
-    border-top: 0.1rem dashed white;
     border-bottom: 0.1rem dashed white;
     padding-bottom: 1rem;
 }
@@ -168,7 +209,6 @@ header {
 }
 
 .terp-pro {
-    border-bottom: 0.1rem dashed white;
     padding-bottom: 1rem;
 }
 
@@ -188,8 +228,25 @@ header {
     text-decoration: none;
 }
 
+.sociableai {
+    padding-bottom: 1rem;
+}
+
+.sociableai1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sociableai1 img {
+    width: 90%;
+    height: 30%;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1%;
+}
+
 .icl {
-    border-bottom: 0.1rem dashed white;
     padding-bottom: 1rem;
 }
 
@@ -208,7 +265,6 @@ header {
 }
 
 .fastest-route {
-    border-bottom: 0.1rem dashed white;
     padding-bottom: 1rem;
 }
 
@@ -254,7 +310,6 @@ header {
 }
 
 .portfolio-website {
-    border-bottom: 0.1rem dashed white;
     padding-bottom: 1rem;
 }
 
@@ -324,8 +379,8 @@ header {
     box-shadow: 0 0 0.2rem rgb(200, 220, 230);
     padding: 0.3rem 0.6rem;
     font-size: 1.1rem;
-    background-color: rgb(134, 155, 196);
-    color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(210, 220, 230);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 footer {
